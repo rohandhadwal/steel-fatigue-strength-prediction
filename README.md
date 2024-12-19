@@ -2,8 +2,6 @@
 
 This repository contains a comprehensive analysis and predictive modeling project focused on the fatigue strength of steel materials. Using a dataset from the National Institute for Materials Science (NIMS), this project explores factors influencing fatigue behavior, preprocessing techniques, and model evaluation to identify reliable regression techniques for prediction.
 
----
-
 ## Dataset Overview
 
 ### Introduction
@@ -26,8 +24,6 @@ The dataset contains **25 features**, categorized as follows:
 - **Curse of Dimensionality**: The sparsely populated data space affects distance-based algorithms.  
 - **Feature Selection/Reduction**: Techniques like PCA or Recursive Feature Elimination (RFE) are critical to address these issues.
 
----
-
 ## Data Preprocessing
 
 1. **Handling Missing Data:** Imputed missing values using statistical methods.  
@@ -37,8 +33,6 @@ The dataset contains **25 features**, categorized as follows:
    - ANOVA F-statistic for linear dependencies.  
    - Mutual Information (MI) scores for non-linear relationships.  
 5. **Feature Reduction:** Principal Component Analysis (PCA) to retain 95% variance while reducing dimensionality.
-
----
 
 ## Model Selection and Evaluation
 
@@ -60,8 +54,6 @@ The following regression techniques were evaluated:
 - While Gradient Boosting and Random Forest achieved lower training MAE, their higher testing MAE indicated potential overfitting.  
 - **KNN and SVR demonstrated better generalization, making them more suitable for this task.**
 
----
-
 ## Additional Analysis
 
 ### 1. Impact of Training Dataset on Generalization Performance
@@ -75,15 +67,11 @@ The sequence of preprocessing techniques significantly impacts model performance
 
 Performing feature selection before PCA ensures that only the most relevant features are retained, enhancing predictive performance.
 
----
-
 ## Results Summary
 
 - **Most Reliable Models:** KNN & SVR  
 - **Best Preprocessing Sequence:** [Scaling → Feature Selection → PCA]  
 - **SVR Outperforms KNN:** Achieved higher R² and lower MAE with increasing training dataset sizes.  
-
----
 
 ## Author
 Rohan Dhadwal
